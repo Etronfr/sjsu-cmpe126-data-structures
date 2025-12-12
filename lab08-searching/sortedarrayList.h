@@ -58,7 +58,7 @@ void print() const {
 
 bool insert(elemType value) {
 	if (isFull()) {
-		cerr << "Array is full cannot insert" << endl;
+		cerr << "Array is full cannot insert." << endl;
 		return false;
 	}
 	int insertPos = 0;
@@ -73,7 +73,7 @@ bool insert(elemType value) {
 
 void remove(elemType value) {
 	if (isEmpty()) {
-		cerr << "Array is empty so cannot remove anything" << endl;
+		cerr << "Array is empty so nothing can be removed." << endl;
 		return;
 	}
 	int removePos = -1;
@@ -84,7 +84,7 @@ void remove(elemType value) {
 	}
 
 	if (removePos == -1) {
-		cerr << "Value was not found in the list bud, sorry" << endl;
+		cerr << "Value was not found in the list." << endl;
 		return;
 	}
 
@@ -140,3 +140,4 @@ unsigned int binarySearchRec (elemType element, int first, int last) {
 };
 
 #endif /* SORTEDARRAYLIST_H_ */
+
