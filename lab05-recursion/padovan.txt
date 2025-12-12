@@ -1,0 +1,10 @@
+1. If n equals 0, 1, or 2, return 1 because those are the base cases.
+2. Otherwise, find the Padovan number by adding the results of calling padovan(n−2) and padovan(n−3).
+3. Return that sum as the result.
+
+// [HP] Part 4: In the file called Padovan.txt, discuss briefly if the recursive implementation is suitable for this function as compared to an iterative implementation.
+/*
+Recursive implementation works fine when using smaller values of n, but as n gets larger, it starts doing a lot of repeated calculations. 
+Because of this, recursion isn’t the most efficient option between the two. Using iterative implementation, like a for or while loop, would be more practical and run 
+faster for bigger numbers.
+*/

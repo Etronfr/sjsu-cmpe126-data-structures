@@ -1,0 +1,9 @@
+//Pseudocode
+If number has only one digit, it’s a palindrome.
+Otherwise, compare the first and last digits.
+If they’re different, return false.
+If they’re the same, remove those digits and call the function again on what’s left.
+
+//Computational Complexity
+The time complexity of the recursive function would be O(d). Where d is the number of digits in the number. 
+Each recursive call removes two digits, first and last. This makes it so the number of calls grows roughly linearly with the number of digits.
